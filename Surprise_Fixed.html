@@ -1,0 +1,1154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171329">
+<title>Happy Birthday Shraddha ✨</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #171329;
+  --pink: #ffb9d2;
+  --lavender: #cbbaff;
+  --gold: #ffe2a3;
+  --white: #fff8ff;
+  --muted: #c9bfd9;
+  --glass: rgba(255,255,255,.08);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--white);
+  font-family: "DM Sans", sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%, #483265 0, transparent 35%),
+    radial-gradient(circle at 90% 35%, #512d4c 0, transparent 32%),
+    radial-gradient(circle at 50% 100%, #263957 0, transparent 40%),
+    var(--bg);
+  overflow-x: hidden;
+}
+
+button { font: inherit; }
+
+.ambient {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  color: #fff1c6;
+  opacity: .65;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+.star:nth-child(1) { top: 12%; left: 8%; }
+.star:nth-child(2) { top: 25%; right: 10%; animation-delay: 1s; }
+.star:nth-child(3) { bottom: 20%; left: 12%; animation-delay: 1.5s; }
+.star:nth-child(4) { bottom: 15%; right: 9%; animation-delay: .5s; }
+
+@keyframes twinkle {
+  50% { opacity: 1; transform: scale(1.4); }
+}
+
+.wrap {
+  position: relative;
+  z-index: 1;
+  width: min(700px, calc(100% - 28px));
+  margin: auto;
+  padding: 24px 0 55px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  margin-bottom: 15px;
+}
+
+.topbar span:last-child {
+  color: var(--gold);
+  border: 1px solid #ffe2a355;
+  padding: 7px 11px;
+  border-radius: 30px;
+}
+
+.progress-track {
+  height: 5px;
+  border-radius: 20px;
+  background: #ffffff18;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg,var(--lavender),var(--pink),var(--gold));
+  transition: width .4s;
+}
+
+.page {
+  display: none;
+  padding: 28px 21px;
+  border: 1px solid #ffffff20;
+  border-radius: 25px;
+  background: linear-gradient(145deg,rgba(255,255,255,.11),rgba(255,255,255,.045));
+  box-shadow: 0 20px 60px #0005;
+  backdrop-filter: blur(15px);
+  animation: appear .45s ease;
+}
+
+.page.active { display: block; }
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.center { text-align: center; }
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(43px, 12vw, 68px);
+  line-height: 1.12;
+  margin: 15px 0;
+  background: linear-gradient(100deg,#e1d5ff,#ffbed6,#ffe6a5);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+h2 {
+  font: 500 clamp(25px,7vw,35px)/1.3 "Playfair Display",serif;
+  margin: 13px 0;
+}
+
+.script {
+  font-family: "Pacifico", cursive;
+  color: var(--pink);
+  font-size: 23px;
+}
+
+.lead {
+  max-width: 520px;
+  margin: 15px auto;
+  color: #e9e1f2;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.hero-emoji {
+  font-size: 76px;
+  margin: 15px 0;
+  filter: drop-shadow(0 8px 15px #0005);
+}
+
+.btn {
+  border: 1px solid #ffffff35;
+  background: #ffffff12;
+  color: var(--white);
+  padding: 13px 19px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: #ffffff22;
+}
+
+.btn.primary {
+  border: 0;
+  color: #30213b;
+  background: linear-gradient(100deg,#cbbaff,#ffb9d2);
+  box-shadow: 0 8px 22px #c19be944;
+}
+
+.btn:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+  margin: 22px auto;
+}
+
+.option {
+  min-height: 75px;
+  padding: 14px 12px;
+  border: 1px solid #ffffff25;
+  border-radius: 16px;
+  color: var(--white);
+  background: #ffffff09;
+  text-align: left;
+  cursor: pointer;
+  transition: .2s;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.option:hover { border-color: var(--pink); }
+
+.option.selected {
+  border-color: var(--gold);
+  background: #ffe2a31b;
+  box-shadow: 0 0 0 1px #ffe2a344;
+}
+
+.option small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.feedback {
+  min-height: 24px;
+  color: var(--gold);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+/* Memory matching game */
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  max-width: 390px;
+  margin: 23px auto;
+}
+
+.game-card {
+  aspect-ratio: 1;
+  border: 1px solid #ffffff25;
+  border-radius: 17px;
+  background: #ffffff12;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.game-card.open,
+.game-card.matched {
+  background: #ffb9d222;
+  border-color: var(--pink);
+}
+
+.game-card.matched { opacity: .6; }
+
+/* Photo gallery */
+
+.photo-frame {
+  width: min(100%,430px);
+  margin: 22px auto 15px;
+  padding: 8px;
+  background: linear-gradient(135deg,#ffe2a3,#ffb9d2,#cbbaff);
+  border-radius: 22px;
+  box-shadow: 0 16px 40px #0006;
+  transform: rotate(-1deg);
+}
+
+.photo-frame img {
+  width: 100%;
+  height: min(115vw,510px);
+  max-height: 510px;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+  background: #292039;
+}
+
+.photo-count {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin: 13px 0;
+}
+
+.caption {
+  font: italic 500 clamp(21px,5vw,28px)/1.5 "Playfair Display",serif;
+  color: #ffeaf3;
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.photo-dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin: 14px auto;
+}
+
+.photo-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff30;
+}
+
+.photo-dots span.active { background: var(--gold); }
+
+/* Friendship contract */
+
+.contract {
+  background: #fff8ee;
+  color: #51415d;
+  border-radius: 18px;
+  padding: 23px 17px;
+  margin-top: 22px;
+}
+
+.contract h3 {
+  font: italic 600 30px "Playfair Display",serif;
+  text-align: center;
+  color: #725582;
+  margin: 7px 0;
+}
+
+.contract .subtitle {
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #9a7eaa;
+}
+
+.terms {
+  display: grid;
+  gap: 13px;
+  margin: 22px 0;
+}
+
+.term {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.term input {
+  accent-color: #9874b8;
+  margin-top: 3px;
+}
+
+.term strong { color: #725582; }
+
+.signature {
+  width: 100%;
+  max-width: 230px;
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid #bda8c9;
+  outline: none;
+  background: transparent;
+  text-align: center;
+  color: #51415d;
+  font: italic 17px "Playfair Display",serif;
+}
+
+.divider {
+  height: 1px;
+  background: #ffffff25;
+  margin: 22px 0;
+}
+
+.cake { font-size: 75px; margin: 20px 0; }
+
+.final-message {
+  font: italic 500 clamp(25px,6vw,38px)/1.5 "Playfair Display",serif;
+  color: #ffe5ef;
+  margin: 20px auto;
+}
+
+.countdown-page {
+  text-align: center;
+  padding-top: 12vh;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 25px 0;
+}
+
+.time-box {
+  min-width: 68px;
+  padding: 13px 8px;
+  border: 1px solid #ffffff25;
+  background: #ffffff0b;
+  border-radius: 15px;
+}
+
+.time-box b {
+  display: block;
+  font-size: 27px;
+}
+
+.time-box small {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+
+.hidden { display: none !important; }
+
+@media(max-width:480px) {
+  .wrap { width: calc(100% - 20px); padding-top: 16px; }
+  .page { padding: 24px 16px; border-radius: 21px; }
+  .options { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .option { padding: 12px 10px; font-size: 12px; min-height: 78px; }
+  .game-grid { gap: 8px; }
+  .game-card { border-radius: 13px; font-size: 27px; }
+  .topbar { font-size: 9px; }
+  .photo-frame img { height: 112vw; }
+}
+
+@media(max-width:350px) {
+  .options { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="ambient">
+  <span class="star">✦</span>
+  <span class="star">✧</span>
+  <span class="star">✦</span>
+  <span class="star">♡</span>
+</div>
+
+<!-- Countdown screen -->
+<section id="countdownPage" class="wrap countdown-page">
+  <div class="eyebrow">A little surprise is waiting</div>
+  <h1>Shraddha</h1>
+  <div class="script">Your special day is almost here…</div>
+
+  <p class="lead">
+    Something lovely is being prepared for you.
+    Just a little patience, birthday girl. ♡
+  </p>
+
+  <div class="countdown">
+    <div class="time-box"><b id="days">00</b><small>DAYS</small></div>
+    <div class="time-box"><b id="hours">00</b><small>HOURS</small></div>
+    <div class="time-box"><b id="minutes">00</b><small>MINUTES</small></div>
+    <div class="time-box"><b id="seconds">00</b><small>SECONDS</small></div>
+  </div>
+
+  <p class="muted">
+    Unlocking <strong style="color:var(--gold)">Soon.. ·</strong>
+  </p>
+</section>
+
+<!-- Birthday experience -->
+<main id="experience" class="wrap hidden">
+
+  <div class="topbar">
+    <span>THE SHRADDHA EDITION · MADE WITH ♡</span>
+    <span>A LITTLE SURPRISE ✨</span>
+  </div>
+
+  <div class="progress-track">
+    <div class="progress" id="progress"></div>
+  </div>
+
+  <!-- PAGE 0: Welcome -->
+  <section class="page active" data-page="0">
+    <div class="center">
+      <div class="hero-emoji">🎁</div>
+      <div class="eyebrow">A special little birthday adventure</div>
+      <h1>Happy Birthday,<br>Shraddha!</h1>
+      <p class="lead">
+        Oye Didi! 😄
+        Aaj ka din sirf cake aur photos ke liye nahi hai.
+        I've made a tiny surprise for you.
+      </p>
+      <p class="lead">
+        A few fun questions, a little game and some pictures
+        waiting to be unlocked. Ready?
+      </p>
+      <div class="script">Chalo, shuru karte hain! ♡</div>
+      <div class="actions">
+        <button class="btn primary" onclick="go(1)">Let's go ✨</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 1: Question -->
+  <section class="page" data-page="1">
+    <div class="center">
+      <div class="eyebrow">Question 01 · Just for fun</div>
+      <h2>What kind of birthday mood are you in today?</h2>
+      <p class="muted">Choose the one that feels most like you.</p>
+    </div>
+
+    <div class="options">
+      <button class="option" onclick="selectOption(this,1)">
+        🌸 <strong>Peaceful mood</strong>
+        <small>Good food and relaxation.</small>
+      </button>
+      <button class="option" onclick="selectOption(this,1)">
+        🎉 <strong>Party mood</strong>
+        <small>Music, fun and celebration.</small>
+      </button>
+      <button class="option" onclick="selectOption(this,1)">
+        📸 <strong>Picture mood</strong>
+        <small>Good outfits and lovely photos.</small>
+      </button>
+      <button class="option" onclick="selectOption(this,1)">
+        😂 <strong>Full pagal mood</strong>
+        <small>Random fun and unlimited laughter.</small>
+      </button>
+    </div>
+
+    <p class="feedback" id="feedback1"></p>
+    <div class="actions">
+      <button class="btn primary" id="next1" disabled onclick="go(2)">Next →</button>
+    </div>
+  </section>
+
+  <!-- PAGE 2: Question -->
+  <section class="page" data-page="2">
+    <div class="center">
+      <div class="eyebrow">Question 02 · A little about you</div>
+      <h2>What is your favourite way to spend a free day?</h2>
+      <p class="muted">No thinking too much. Pick your answer!</p>
+    </div>
+
+    <div class="options">
+      <button class="option" onclick="selectOption(this,2)">
+        🎬 <strong>Movies & series</strong>
+        <small>One episode becomes five.</small>
+      </button>
+      <button class="option" onclick="selectOption(this,2)">
+        🛍️ <strong>Going out</strong>
+        <small>Shopping, food and exploring.</small>
+      </button>
+      <button class="option" onclick="selectOption(this,2)">
+        😴 <strong>Sleep & chill</strong>
+        <small>Do absolutely nothing.</small>
+      </button>
+      <button class="option" onclick="selectOption(this,2)">
+        💬 <strong>Talking & laughing</strong>
+        <small>Random conversations forever.</small>
+      </button>
+    </div>
+
+    <p class="feedback" id="feedback2"></p>
+    <div class="actions">
+      <button class="btn" onclick="go(1)">← Back</button>
+      <button class="btn primary" id="next2" disabled onclick="go(3)">Next →</button>
+    </div>
+  </section>
+
+  <!-- PAGE 3: Question -->
+  <section class="page" data-page="3">
+    <div class="center">
+      <div class="eyebrow">Question 03 · One last question</div>
+      <h2>Choose three things you want more of in life.</h2>
+      <p class="muted">Your little wish list. Select any three.</p>
+    </div>
+
+    <div class="options" id="wishOptions">
+      <button class="option" onclick="toggleWish(this)">🌈 Happiness</button>
+      <button class="option" onclick="toggleWish(this)">🌱 Growth</button>
+      <button class="option" onclick="toggleWish(this)">✈️ Adventures</button>
+      <button class="option" onclick="toggleWish(this)">💫 Confidence</button>
+      <button class="option" onclick="toggleWish(this)">💗 Good people</button>
+      <button class="option" onclick="toggleWish(this)">☀️ Peace</button>
+    </div>
+
+    <p class="feedback" id="wishFeedback">0 / 3 selected</p>
+    <div class="actions">
+      <button class="btn" onclick="go(2)">← Back</button>
+      <button class="btn primary" id="next3" disabled onclick="go(4)">Unlock the game →</button>
+    </div>
+  </section>
+
+  <!-- PAGE 4: Mind game -->
+  <section class="page" data-page="4">
+    <div class="center">
+      <div class="eyebrow">Mini mind game · Memory challenge</div>
+      <h2>Let's test that birthday brain! 🧠</h2>
+      <p class="muted">
+        Find all three matching pairs.
+        Tap two cards at a time. You can do it!
+      </p>
+    </div>
+
+    <div class="game-grid" id="gameGrid"></div>
+    <p class="feedback" id="gameFeedback">Find the matching pairs!</p>
+
+    <div class="actions">
+      <button class="btn" onclick="resetGame()">Restart game ↻</button>
+      <button class="btn primary" id="unlockPhotos" disabled onclick="go(5)">
+        Unlock your photos ♡
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 5: Photos -->
+  <section class="page" data-page="5">
+    <div class="center">
+      <div class="eyebrow">A little gallery · Just for you</div>
+      <h2>One photo at a time…</h2>
+      <p class="muted">
+        17 pictures, 17 little reasons to celebrate the birthday girl.
+        Take your time. ♡
+      </p>
+
+      <div class="photo-frame">
+        <img id="memoryPhoto" src="photo1.jpeg" alt="Shraddha">
+      </div>
+
+      <div class="photo-count" id="photoCount">PHOTO 01 OF 17</div>
+      <p class="caption" id="photoCaption"></p>
+      <div class="photo-dots" id="photoDots"></div>
+
+      <div class="actions">
+        <button class="btn" id="prevPhoto" onclick="changePhoto(-1)" disabled>← Previous</button>
+        <button class="btn primary" id="nextPhoto" onclick="changePhoto(1)">Next photo →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 6: Friendship contract -->
+  <section class="page" data-page="6">
+    <div class="center">
+      <div class="eyebrow">Some official-looking nonsense</div>
+      <h2>The Friendship Contract 🤝</h2>
+      <p class="muted">
+        A very serious document. Please read carefully. 😂
+      </p>
+    </div>
+
+    <div class="contract">
+      <div class="center" style="font-size:27px">🤝 ♡ 🤝</div>
+      <h3>Friendship Contract</h3>
+      <p class="subtitle">OFFICIALLY UNOFFICIAL · PERMANENTLY ACTIVE</p>
+
+      <div class="terms">
+        <label class="term">
+          <input type="checkbox">
+          <span><strong>Random conversations:</strong> Allowed anytime, even when the topic makes absolutely no sense.</span>
+        </label>
+
+        <label class="term">
+          <input type="checkbox">
+          <span><strong>Teasing each other:</strong> Mandatory. But only with friendship and affection. 😂</span>
+        </label>
+
+        <label class="term">
+          <input type="checkbox">
+          <span><strong>Listening service:</strong> Available whenever life gets confusing or a little difficult.</span>
+        </label>
+
+        <label class="term">
+          <input type="checkbox">
+          <span><strong>Celebrating wins:</strong> Every little achievement deserves appreciation.</span>
+        </label>
+
+        <label class="term">
+          <input type="checkbox">
+          <span><strong>Supporting dreams:</strong> Always keep growing and cheering each other on.</span>
+        </label>
+
+        <label class="term">
+          <input type="checkbox">
+          <span><strong>Friendship cancellation:</strong> This feature is permanently unavailable. 😌</span>
+        </label>
+      </div>
+
+      <div class="center">
+        <p style="font:italic 14px 'Playfair Display',serif">
+          Clause #∞: Friendship includes unlimited laughter and occasional nonsense.
+        </p>
+        <input class="signature" id="signature" placeholder="Sign here, birthday girl">
+        <p class="subtitle">VALID INDEFINITELY · NO CANCELLATION</p>
+      </div>
+    </div>
+
+    <p class="feedback" id="contractFeedback">Accept all the clauses and sign the contract. ♡</p>
+
+    <div class="actions">
+      <button class="btn" onclick="go(5)">← Back</button>
+      <button class="btn primary" id="signButton" disabled onclick="signContract()">
+        Sign the contract ✨
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 7: Birthday wish -->
+  <section class="page" data-page="7">
+    <div class="center">
+      <div class="eyebrow">One last birthday ritual</div>
+      <h2>Make a little wish…</h2>
+      <p class="lead">
+        Think of something you really want.
+        It can be a dream, a goal or something small that makes you happy.
+      </p>
+
+      <div class="cake">🎂</div>
+      <div class="script">Close your eyes and make a wish!</div>
+
+      <div class="actions">
+        <button class="btn primary" id="wishButton" onclick="sendWish()">
+          I've made my wish ✨
+        </button>
+      </div>
+
+      <p class="feedback" id="wishResult"></p>
+    </div>
+  </section>
+
+  <!-- PAGE 8: Final -->
+  <section class="page" data-page="8">
+    <div class="center">
+      <div class="eyebrow">Surprise completed · Birthday wishes delivered</div>
+      <div class="hero-emoji">🎉</div>
+      <h1>Happy Birthday,<br>Shraddha!</h1>
+
+      <div class="script">Teri hasi aisehi कायम राहू दे…</div>
+
+      <p class="final-message">
+        Keep smiling, keep growing and keep being your wonderful self.
+      </p>
+
+      <div class="divider"></div>
+
+      <p class="lead">
+        I hope this year brings you lots of happiness, good health,
+        new experiences and countless reasons to smile.
+      </p>
+
+      <p class="lead">
+        तुझी सगळी स्वप्नं पूर्ण होवोत.
+        आयुष्यात खूप पुढे जा आणि अशीच हसत राहा.
+        स्वतःवर विश्वास ठेव — तू नक्कीच खूप छान करशील! 💗
+      </p>
+
+      <div class="cake">🌷 🎂 ✨</div>
+
+      <p class="script">Happy Birthday, dost! ♡</p>
+      <p class="muted">Made with friendship, a little creativity and lots of good wishes.</p>
+    </div>
+  </section>
+
+  <!-- Music -->
+  <div class="actions">
+    <button class="btn" id="musicButton" onclick="toggleMusic()">
+      ♫ Play background music
+    </button>
+  </div>
+
+  <audio id="music" src="music.mp3" loop preload="none"></audio>
+
+</main>
+
+<script>
+/* Birthday unlock date: 26 November 2026, midnight IST */
+const birthdayTime = new Date("2026-11-26T00:00:00+05:30").getTime();
+
+let countdownTimer;
+
+function unlockBirthday() {
+  document.getElementById("countdownPage").classList.add("hidden");
+  document.getElementById("experience").classList.remove("hidden");
+  showPage(0);
+
+  if (countdownTimer) clearInterval(countdownTimer);
+}
+
+function updateCountdown() {
+  const distance = birthdayTime - Date.now();
+
+  if (distance <= 0) {
+    unlockBirthday();
+    return;
+  }
+
+  const values = {
+    days: Math.floor(distance / 86400000),
+    hours: Math.floor((distance % 86400000) / 3600000),
+    minutes: Math.floor((distance % 3600000) / 60000),
+    seconds: Math.floor((distance % 60000) / 1000)
+  };
+
+  Object.entries(values).forEach(([id, value]) => {
+    document.getElementById(id).textContent =
+      String(value).padStart(2, "0");
+  });
+}
+
+/* Countdown starts after all page-navigation functions are initialized. */
+
+/* Page navigation */
+const pages = [...document.querySelectorAll(".page")];
+let currentPage = 0;
+
+function showPage(number) {
+  currentPage = number;
+
+  pages.forEach((page, index) => {
+    page.classList.toggle("active", index === number);
+  });
+
+  document.getElementById("progress").style.width =
+    (number / (pages.length - 1) * 100) + "%";
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function go(number) {
+  showPage(number);
+}
+
+/* General question selections */
+function selectOption(button, questionNumber) {
+  const parent = button.parentElement;
+
+  parent.querySelectorAll(".option").forEach(option => {
+    option.classList.remove("selected");
+  });
+
+  button.classList.add("selected");
+
+  document.getElementById("feedback" + questionNumber).textContent =
+    "Lovely choice! Answer saved. ♡";
+
+  document.getElementById("next" + questionNumber).disabled = false;
+}
+
+/* Select three birthday wishes */
+const selectedWishes = new Set();
+
+function toggleWish(button) {
+  const value = button.textContent.trim();
+
+  if (selectedWishes.has(value)) {
+    selectedWishes.delete(value);
+    button.classList.remove("selected");
+  } else if (selectedWishes.size < 3) {
+    selectedWishes.add(value);
+    button.classList.add("selected");
+  }
+
+  document.getElementById("wishFeedback").textContent =
+    selectedWishes.size + " / 3 selected";
+
+  document.getElementById("next3").disabled =
+    selectedWishes.size !== 3;
+}
+
+/* Matching-pairs memory game */
+const gameSymbols = ["🌸", "🎁", "⭐", "🌸", "🎁", "⭐"];
+
+let gameCards = [];
+let firstCard = null;
+let secondCard = null;
+let lockBoard = false;
+let matchedPairs = 0;
+
+function shuffle(items) {
+  const result = [...items];
+
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+
+  return result;
+}
+
+function resetGame() {
+  gameCards = shuffle(gameSymbols);
+  firstCard = null;
+  secondCard = null;
+  lockBoard = false;
+  matchedPairs = 0;
+
+  document.getElementById("unlockPhotos").disabled = true;
+  document.getElementById("gameFeedback").textContent =
+    "Find the matching pairs!";
+
+  const grid = document.getElementById("gameGrid");
+  grid.innerHTML = "";
+
+  gameCards.forEach((symbol, index) => {
+    const card = document.createElement("button");
+    card.className = "game-card";
+    card.textContent = "?";
+    card.setAttribute("aria-label", "Hidden game card");
+
+    card.addEventListener("click", () => flipCard(card, symbol));
+
+    grid.appendChild(card);
+  });
+}
+
+function flipCard(card, symbol) {
+  if (
+    lockBoard ||
+    card.classList.contains("open") ||
+    card.classList.contains("matched")
+  ) return;
+
+  card.textContent = symbol;
+  card.classList.add("open");
+
+  if (!firstCard) {
+    firstCard = { card, symbol };
+    return;
+  }
+
+  secondCard = { card, symbol };
+  lockBoard = true;
+
+  if (firstCard.symbol === secondCard.symbol) {
+    firstCard.card.classList.add("matched");
+    secondCard.card.classList.add("matched");
+
+    matchedPairs++;
+
+    firstCard = null;
+    secondCard = null;
+    lockBoard = false;
+
+    if (matchedPairs === 3) {
+      document.getElementById("gameFeedback").textContent =
+        "You did it! All pairs matched. Birthday brain unlocked! 🎉";
+
+      document.getElementById("unlockPhotos").disabled = false;
+    } else {
+      document.getElementById("gameFeedback").textContent =
+        "That's a match! Find the next one. ✨";
+    }
+  } else {
+    document.getElementById("gameFeedback").textContent =
+      "Not a match! Try again. 😊";
+
+    setTimeout(() => {
+      firstCard.card.textContent = "?";
+      secondCard.card.textContent = "?";
+
+      firstCard.card.classList.remove("open");
+      secondCard.card.classList.remove("open");
+
+      firstCard = null;
+      secondCard = null;
+      lockBoard = false;
+    }, 850);
+  }
+}
+
+resetGame();
+
+/* Individual photo gallery */
+const captions = [
+  "A smile that deserves its own little celebration. ♡",
+  "Looking lovely, just being yourself.",
+  "A little picture, a whole lot of personality.",
+  "Keep that confidence. It suits you.",
+  "Some smiles really do brighten the day.",
+  "A beautiful reminder to keep shining.",
+  "Your own style, your own kind of magic.",
+  "A little moment worth keeping.",
+  "May you always find reasons to smile like this.",
+  "Just a reminder: you're doing great.",
+  "Keep growing, glowing and enjoying the journey.",
+  "Keep smiling like this—it suits you...Bindal Didi 😁 ♡",
+  "A lovely picture of a lovely person.",
+  "Here's to more happy moments ahead.",
+  "Keep making memories and enjoying the little things.",
+  "More smiles, more laughter, more adventures!",
+  "And that's the gallery! Happy birthday once again. 💗"
+];
+
+let photoIndex = 0;
+
+function renderPhoto() {
+  const image = document.getElementById("memoryPhoto");
+
+  image.onerror = function() {
+    image.alt = "Could not load photo" + (photoIndex + 1) +
+      ". Check that all photo files are beside this HTML file.";
+  };
+
+  image.src = "photo" + (photoIndex + 1) + ".jpeg";
+  image.alt = "Shraddha birthday photo " + (photoIndex + 1);
+
+  document.getElementById("photoCount").textContent =
+    "PHOTO " + String(photoIndex + 1).padStart(2, "0") + " OF 17";
+
+  document.getElementById("photoCaption").textContent =
+    captions[photoIndex];
+
+  document.getElementById("prevPhoto").disabled =
+    photoIndex === 0;
+
+  document.getElementById("nextPhoto").textContent =
+    photoIndex === 16 ? "Continue →" : "Next photo →";
+
+  const dots = document.getElementById("photoDots");
+  dots.innerHTML = "";
+
+  for (let i = 0; i < 17; i++) {
+    const dot = document.createElement("span");
+    if (i === photoIndex) dot.classList.add("active");
+    dots.appendChild(dot);
+  }
+}
+
+function changePhoto(direction) {
+  if (photoIndex === 16 && direction === 1) {
+    go(6);
+    return;
+  }
+
+  photoIndex = Math.max(0, Math.min(16, photoIndex + direction));
+  renderPhoto();
+}
+
+renderPhoto();
+
+/* Friendship contract */
+const contractBoxes = [
+  ...document.querySelectorAll(".term input")
+];
+
+contractBoxes.forEach(box => {
+  box.addEventListener("change", updateContract);
+});
+
+function updateContract() {
+  const accepted = contractBoxes.filter(box => box.checked).length;
+
+  document.getElementById("contractFeedback").textContent =
+    accepted + " of 6 clauses accepted.";
+
+  document.getElementById("signButton").disabled =
+    accepted !== 6;
+}
+
+function signContract() {
+  const signature = document.getElementById("signature").value.trim();
+
+  if (!signature) {
+    document.getElementById("contractFeedback").textContent =
+      "Don't forget your signature! 😄";
+    document.getElementById("signature").focus();
+    return;
+  }
+
+  document.getElementById("contractFeedback").textContent =
+    "Signed by " + signature + " — friendship officially active! ♡";
+
+  setTimeout(() => go(7), 1200);
+}
+
+/* Final birthday wish */
+function sendWish() {
+  const button = document.getElementById("wishButton");
+
+  button.disabled = true;
+  button.textContent = "Wish sent into the universe ✨";
+
+  document.getElementById("wishResult").textContent =
+    "May your wish find its way to you. Happy Birthday, Shraddha! ♡";
+
+  setTimeout(() => go(8), 1800);
+}
+
+/* Background music */
+const music = document.getElementById("music");
+
+async function toggleMusic() {
+  const button = document.getElementById("musicButton");
+
+  if (music.paused) {
+    try {
+      await music.play();
+      button.textContent = "Ⅱ Pause background music";
+    } catch (error) {
+      button.textContent = "♫ Music unavailable";
+      alert("Please keep music.mp3 in the same folder as this HTML file.");
+    }
+  } else {
+    music.pause();
+    button.textContent = "♫ Play background music";
+  }
+}
+
+
+/* PREVIEW SWITCH
+   true  = open the birthday experience immediately while testing
+   false = show the real countdown until 26 November 2026, midnight IST
+*/
+const PREVIEW_MODE = false;
+
+if (PREVIEW_MODE) {
+  unlockBirthday();
+} else {
+  updateCountdown();
+  countdownTimer = setInterval(updateCountdown, 1000);
+}
+</script>
+
+</body>
+</html>
